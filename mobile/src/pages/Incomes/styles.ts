@@ -18,9 +18,13 @@ export const EmptyContainer = styled.View`
 `
 
 export const Title = styled.Text`
-  color: #d4ac50;
-  font-size: 42px;
+  color: #fff;
+  font-family:"Codec"
+  font-size: 36px;
   text-align: center;
+  margin-top: 35px;
+  margin-left: 35px;
+  margin-right: 35px;
   margin-bottom: 50px;
 `;
 
@@ -28,7 +32,6 @@ export const Image = styled.Image``;
 
 export const Form = styled.ScrollView`
   flex: 1;
-  background-color: #fff;
 `;
 
 export const InputGroup = styled.View`
@@ -49,8 +52,8 @@ export const Input = styled.TextInput`
 
 export const AddButton = styled.TouchableOpacity`
   margin: 20px 30px;
+  width: 150px
   height: 50px;
-  border-radius: 8px;  
 `;
 
 export const AddButtonGradient = styled(LinearGradient).attrs({
@@ -61,7 +64,7 @@ export const AddButtonGradient = styled(LinearGradient).attrs({
   flex: 1;
   justify-content: center;
   align-items: center;
-  border-radius: 8px;
+  border-radius: 30px;
 `;
 
 export const AddButtonText = styled.Text`
@@ -70,9 +73,9 @@ export const AddButtonText = styled.Text`
 `;
 
 export const FAB = styled.TouchableOpacity`
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
+  position: relative;
+  bottom: 18%;
+  right: 0%;
 
   height: 70px;
   width: 70px;

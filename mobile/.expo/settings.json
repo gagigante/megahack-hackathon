@@ -3,5 +3,6 @@
   "lanType": "ip",
   "dev": true,
   "minify": false,
-  "urlRandomness": "cg-rx9"
+  "urlRandomness": "cg-rx9",
+  "https": true
 }
