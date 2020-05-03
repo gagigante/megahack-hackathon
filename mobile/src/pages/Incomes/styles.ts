@@ -14,13 +14,12 @@ export const Container = styled(LinearGradient).attrs({
 export const EmptyContainer = styled.View`
   flex: 1;
   align-items: center;
-  padding: 50px 0;
+  padding: 40px 0;
 `
 
 export const Title = styled.Text`
   color: #fff;
-  font-family:"Codec"
-  font-size: 36px;
+  font-size: 32px;
   text-align: center;
   margin-top: 35px;
   margin-left: 35px;
@@ -28,10 +27,10 @@ export const Title = styled.Text`
   margin-bottom: 50px;
 `;
 
-export const Image = styled.Image``;
-
-export const Form = styled.ScrollView`
+export const Form = styled.View`
   flex: 1;
+  justify-content: center;
+  /* align-items: center; */
 `;
 
 export const InputGroup = styled.View`
@@ -45,14 +44,14 @@ export const InputLabel = styled.Text`
 `;
 
 export const Input = styled.TextInput`
-  padding: 8px 10px;
+  padding: 8px 10px 8px 15px;
   background-color: rgba(125, 125, 100, 0.1);
-  border-radius: 8px;
+  border-radius: 30px;
 `;
 
 export const AddButton = styled.TouchableOpacity`
-  margin: 20px 30px;
-  width: 150px
+  margin: 20px auto;
+  width: 150px;
   height: 50px;
 `;
 
@@ -73,9 +72,9 @@ export const AddButtonText = styled.Text`
 `;
 
 export const FAB = styled.TouchableOpacity`
-  position: relative;
-  bottom: 18%;
-  right: 0%;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
 
   height: 70px;
   width: 70px;

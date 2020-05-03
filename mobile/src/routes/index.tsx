@@ -5,11 +5,13 @@ const FormStack = createStackNavigator();
 
 import PlanningRoutes from './Planning';
 
+import SignRoutes from './Auth';
+
 
 const Routes: React.FC = () => {
-  return (    
+  return (
     <NavigationContainer>
-      <PlanningRoutes />
+      <SignRoutes />
     </NavigationContainer>
   );
 }
