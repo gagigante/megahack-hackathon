@@ -3,7 +3,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Feather } from '@expo/vector-icons';
 
 import Dashboard from '../../pages/Dashboard';
-
+import Dreams from '../../pages/Dreams';
 import Rank from '../../pages/Rank';
 
 import Incomes from '../../pages/Incomes';
@@ -25,10 +25,9 @@ const AppRoutes: React.FC = () => {
       }}
     >
       <MainNavigator.Screen
-        name="Home"
+        name="Dashboard"
         component={Dashboard}
         options={{
-          tabBarLabel: 'Dashboard',
           tabBarIcon: ({ color, size }) => (
             <Feather name="home" color={color} size={size} />
           ),
@@ -45,20 +44,18 @@ const AppRoutes: React.FC = () => {
         }}
       />
       <MainNavigator.Screen
-        name="Orders"
-        component={Dashboard}
+        name="Add"
+        component={Incomes}
         options={{
-          tabBarLabel: 'Pedidos',
           tabBarIcon: ({ color, size }) => (
             <Feather name="plus" color={color} size={size} />
           ),
         }}
       />
       <MainNavigator.Screen
-        name="Profile"
-        component={Dashboard}
+        name="Dreams"
+        component={Dreams}
         options={{
-          tabBarLabel: 'Perfil',
           tabBarIcon: ({ color, size }) => (
             <Feather name="cloud" color={color} size={size} />
           ),

@@ -47,3 +47,26 @@ export const XpView = styled.View`
 export const XpText = styled.Text`
   margin-bottom: 8px;
 `;
+
+export const ItemRow = styled.View`
+  flex: 1;
+  width: 100%;
+  flex-direction: row;
+  margin: 5px;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+export const Description = styled.Text`
+  font-size: 16px;
+  color: #a1a1a1;
+`;
+
+interface ValueProps {
+  color: string;
+}
+
+export const Value = styled.Text<ValueProps>`
+  font-size: 16px;
+  color: ${props => props.color}
+`;
