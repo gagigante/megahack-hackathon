@@ -27,23 +27,31 @@ export const HeaderText = styled.Text`
 
 export const Content = styled.View`
   flex: 1;
-  /* background-color: red; */
-  padding: 0 25px;
+  padding: 0 25px 15px;
+  justify-content: flex-end;
+`;
+
+export const InputView = styled.View`
+  height: 60px;
+  padding: 20px;
+  background-color: #310057;
+  border-radius: 30px;
+  margin-bottom: 8px;
+  flex-direction: row;
+  align-items: center;
 `;
 
 export const Input = styled.TextInput`
-  padding: 8px 10px 8px 15px;
-  height: 60px;
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 30px;
-  margin-bottom: 10px;
-  color: #fff;
+  flex: 1;
+  margin-left: 15px;
+  font-size: 16px;
+  color: #ddd;
 `;
 
 export const Button = styled.TouchableOpacity`
   height: 60px;
   border-radius: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 `;
 
 export const ButtonGradient = styled(LinearGradient).attrs({
@@ -63,9 +71,12 @@ export const ButtonText = styled.Text`
 `;
 
 export const GoBack = styled.TouchableOpacity`
-  margin: 5px auto;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const GoBackText = styled.Text`
   color: #fff;
+  margin-left: 8px;
 `;

@@ -1,4 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { StatusBar } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+
+import AppProvider from './src/hooks';
 // import { AppLoading } from 'expo';
 // import * as Font from 'expo-font';
 
@@ -13,7 +17,12 @@ import Routes from './src/routes';
 export default function App() {
   // const [fontData, setFontData] = useState(false);
   return (
-    <Routes />
+    <NavigationContainer>
+      <AppProvider>
+        <StatusBar barStyle="light-content" />
+        <Routes />
+      </AppProvider>
+    </NavigationContainer>
   );
   // {!fontData ? (
   //   <AppLoading
