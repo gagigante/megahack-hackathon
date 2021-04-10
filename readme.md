@@ -1,4 +1,4 @@
-# Objetivos
+# Objetivos editado
 
 - Ajudar as pessoas a se tornarem financeiramente independentes
 - Ajudar as pessoas a definirem pontualmente TODAS as seus ativos e passivos (Fontes de entrada e saída)
